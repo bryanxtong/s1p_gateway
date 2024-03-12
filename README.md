@@ -1,3 +1,7 @@
+# Deploy Spring Cloud Discovery Server(spring-cloud-kubernetes-discoveryserver.yml)
+
+# Deploy Spring Cloud Config Server(spring-cloud-kubernetes-configserver.yml)
+
 # S1P :: Gateway
 Based on the new Spring Cloud Gateway, configured to use the Spring Cloud Kubernetes Discovery and Config modules to automatically register routes to (k8s) services matching with the following SPEL Filter:
 **metadata.labels['s1p'] = true**  
@@ -15,7 +19,7 @@ Only if the services contain this label will be automatically registered and the
     </dependency>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-config</artifactId>
+        <artifactId>spring-cloud-kubernetes-client-config</artifactId>
     </dependency>
 ``` 
 
