@@ -9,13 +9,13 @@
     <name>S1P :: Gateway</name>
     <description>S1P :: Gateway</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
-        <spring-cloud.version>Finchley.SR1</spring-cloud.version>
-        <spring.cloud.k8s.version>1.0.0.BUILD-SNAPSHOT</spring.cloud.k8s.version>
+        <spring-boot.version>3.2.3</spring-boot.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <spring.cloud.k8s.version>3.1.0</spring.cloud.k8s.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -54,6 +54,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -65,7 +66,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-kubernetes-config</artifactId>
+            <artifactId>spring-cloud-kubernetes-client-config</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -101,7 +102,7 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
+    <!--<repositories>
         <repository>
             <id>jenkinsx</id>
             <name>Jenkins X Releases</name>
@@ -110,5 +111,5 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories>-->
 </project>
