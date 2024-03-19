@@ -1,4 +1,5 @@
-# Deploy Spring Cloud Discovery Server(spring-cloud-kubernetes-discoveryserver.yml)
+This version is using Spring Cloud Discovery Server and support load balance for apps
+# Deploy Spring Cloud Discovery Server(resources/spring-cloud-kubernetes-discoveryserver.yml)
 
 # S1P :: Gateway
 Based on the new Spring Cloud Gateway, configured to use the Spring Cloud Kubernetes Discovery and Config modules to automatically register routes to (k8s) services matching with the following SPEL Filter:
