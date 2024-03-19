@@ -5,7 +5,7 @@ spring:
       discovery:
         locator:
           enabled: true
-          url-expression: "'http://'+serviceId"
+          url-expression: "'lb://'+serviceId"
     kubernetes:
       reload:
         enabled: true
