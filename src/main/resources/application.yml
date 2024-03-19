@@ -13,8 +13,6 @@ spring:
         period: 5000
       discovery:
         filter: "metadata.labels['s1p']"
-        discovery-server-url: "http://spring-cloud-kubernetes-discoveryserver.default.svc.cluster.local:80"
-
 
 server.port: 8080
 logging:

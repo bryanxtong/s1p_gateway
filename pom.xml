@@ -60,16 +60,16 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
-        <!--using spring cloud k8s discovery server-->
-       <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-kubernetes-discovery</artifactId>
-        </dependency>
-        <!--using spring cloud k8s discovery server-->
+        <!--using spring cloud kubernetes client discovery and loadbalancer-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+            <artifactId>spring-cloud-kubernetes-client-discovery</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-kubernetes-client-loadbalancer</artifactId>
+        </dependency>
+        <!--end using spring cloud kubernetes client discovery and loadbalancer-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-kubernetes-client-config</artifactId>
