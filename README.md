@@ -11,12 +11,16 @@ Only if the services contain this label will be automatically registered and the
     </dependency>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-client-discovery</artifactId>
+        <artifactId>spring-cloud-starter-kubernetes-client</artifactId>
     </dependency>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-client-config</artifactId>
+        <artifactId>spring-cloud-starter-kubernetes-client-loadbalancer</artifactId>
     </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-client-config</artifactId>
+   </dependency>
 ``` 
 
 You can also find inside the [charts/s1p-gateway/templates](charts/s1p-gateway/templates) directory the descriptors 
