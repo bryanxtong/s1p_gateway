@@ -8,7 +8,7 @@ spring:
           url-expression: "'lb://'+serviceId"
     kubernetes:
       discovery:
-        filter: "metadata.labels['s1p']"
+        #filter: "metadata.labels['s1p']"
         discovery-server-url: "http://spring-cloud-kubernetes-discoveryserver.default.svc.cluster.local:80"
   config:
     import: optional:configserver:http://spring-cloud-kubernetes-configserver.default.svc.cluster.local:8888
